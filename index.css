@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+
+.navlist {
+    display: flex;
+}
+
+.navlist a{
+    color: rgb(245, 243, 243);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid rgb(240, 238, 238);
+
+    
+}
+
+
+#menu-icon{
+    color: black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+#hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        -45deg,
+        #0e0e0e 0%,
+        #868688 20%,
+        #d393ca 20%,
+        #da3d5f 40%,
+        #0e0e0e 40%,
+        #553c9a 60%,
+        #b393d3 60%,
+        #b393d3 80%,
+        #3c659a 80%,
+        #080808 100%
+        );
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 600px;
+    margin-bottom: 100px;
+    
+}
+
+.hero-text h1{
+    color: red;
+    font-size: 50px;
+}
+
+.hero-text h3{
+    color: rgb(237, 241, 241);
+    font-size: 24px;
+    margin-bottom:200px ;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+    
+
+}
+
+.icons i{
+    display: block;
+    margin:  26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover{
+    color: rgb(233, 10, 10);
+    transform: translateY(-5px);
+
+}
+
+@media (max-width: 1535px){
+    header{
+        transition: .2s;
+    }
+    .icons{
+        padding:0 3%;
+        transition: .2s;
+    }
+
+}
+
+@media (max-width: 1460px){
+    section{
+        padding:0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1340px){
+    .hero-text h2{
+        font-size:75px;
+        margin:0 0 30px;
+    } 
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    #hero{
+        width: auto;
+        height: auto;
+    }
+    .icons{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width:300px;
+        height: 40vh;
+        background: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    
+}

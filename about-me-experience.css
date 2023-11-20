@@ -1,0 +1,156 @@
+/* ABOUT_ME */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#ABOUT-ME{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+  45deg,
+  #0e0e0e 0%,
+  rgb(122, 120, 219) 20%,
+  #d393ca 20%,
+  #da3d5f 40%,
+  #0e0e0e 40%,
+  #553c9a 60%,
+  #b393d3 60%,
+  #b393d3 80%,
+  #868886 80%,
+  #080808 100%
+  );
+    display:grid;
+
+    
+
+}
+
+#ABOUT-ME p {
+    font-size: 20px;
+    margin-left: 15%;
+    color: white;
+    margin-top: 20%;
+    
+}
+
+.Me{
+    font-size: 30px;
+    position: absolute;
+    margin-top: 5%;
+    color: white;
+}
+
+/* experience-css */
+
+.experience{
+    height: 40vh;
+    width: 100%;
+    min-height: 40vh;
+    position:relative;
+
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(85, 60, 154, 0.5),
+        rgba(85, 60, 154, 0.5) 50px,
+        rgba(179, 147, 211, 0.5) 50px,
+        rgba(179, 147, 211, 0.5) 100px
+      ),
+      repeating-linear-gradient(
+        45deg,
+        #553c9a,
+        #553c9a 45px,
+        #b393d3 45px,
+        #b393d3 60px);
+}
+
+#experience-section{
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    min-height: 40vh;
+}
+
+
+
+/*  
+.wrapper1{
+    background-color: #ee0336;
+    max-height: 9%;
+    padding: 50px;
+    border: solid;
+    position: relative;
+    max-width: 15%;
+
+}*/
+
+
+
+/*  
+.flex-container .wrapper1{
+    background-color: #ee0336;
+    max-height: 9%;
+    padding: 50px;
+    border: solid;
+    position: relative;
+    max-width: 15%;
+    display: flex;
+    align-items:center;
+
+}
+
+
+
+.flex-container .wrapper2{
+    background-color: #b9576d;
+    max-height: 9%;
+    padding: 50px;
+    border: solid;
+    position: relative;
+    max-width: 15%;
+
+}
+
+.flex-container .wrapper3{
+    background-color: #ee0336;
+    max-height: 9%;
+    padding: 50px;
+    border: solid;
+    position: relative;
+    max-width: 15%;
+
+}
+
+.flex-container .wrapper4{
+    background-color: #ee0336;
+    max-height: 9%;
+    padding: 50px;
+    border: solid;
+    position: relative;
+    max-width: 15%;
+    
+
+}
+
+.flex-container{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 7%;
+}
+
+.flex-container h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    
+}*/
+
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}

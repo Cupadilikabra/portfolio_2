@@ -12,18 +12,14 @@ const sr = ScrollReveal ({
     reset: true
 
 });
+var nodeArray = [
+  document.querySelector('.hero-text'),
+  document.querySelector('#ABOUT-ME'),
+];
+ sr.reveal(nodeArray)
+// sr.reveal('.hero-text', {delay:200, origin:'top'});
 
-sr.reveal('.hero-text', {delay:200, origin:'top'});
-
-sr.reveal('#experience-section', {delay:200, origin:'left'});
-
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+// sr.reveal('#ABOUT-ME', {delay:200, origin:'left'});
 
 
 
